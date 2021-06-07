@@ -2,7 +2,7 @@ var   students = [
     {
         
         
-        name: "John", City: "Califoronia"},
+        name: "John", City: "Califoronia"},git 
         {name: "Peter",City: "London"}, 
         {name: "Mathew",City : "Manchester"},
         {name: "Jane",City: "Phoenix"},
