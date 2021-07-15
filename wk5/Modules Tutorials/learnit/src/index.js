@@ -1,104 +1,89 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
+// import { default as Person } from "./Person1.js"
+// console.log( "From Person1.js ", typeof Person)
+//From Person1.js  function
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+//clo2:
+// import { default as Person } from "./Person2"
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
-//Clo1:
-//import { Course, Session } from "./module1" // .js ext is not required
-//console.log( "From Module 1", Course)
-//console.log( "From Module 1", Session)
+// let person = new Person( )
+// console.log(typeof person)
+// //object
 
-//Clo2:
-//import { Course as CourseId, Session } from "./module2" // .js ext is not required
-//console.log( "From Module 2", CourseId)
-//console.log( "From Module 2", Session)
+// console.log( person.hello( ))
+// //undefine
 
-//Clo3:
-//import { Course as CourseId , Session } from "./module3" // .js ext is not required
-//console.log( "From Module 3", Course)
-//console.log( "From Module 3", Session)
-
-//Clo4:
-// console.log("Load index.js.... Start")
-// import { Course as CourseId , Session } from "./module4" // .js ext is not required
-// console.log( "From Module 4", Course)
-// console.log( "From Module 4", Session)
-
-// console.log("Load index.js.... End")
+// console.log( `is person instance of  Person  is ${ person instanceof Person}`)
+// //is person instance of  Person  is true
  
-// //Clo5:import Course  from "./module5 // .js ext is not required
-// console.log( "From Module 5", Course)
+//cl03:
+// import { default as Person } from "./Person3"
 
-//unterminated string constant
+// let person = new Person( )
+// console.log( person.hello( ))
+//Unexpected token, expected "{" (2:12)
 
-//CLo6:
-// import { default as Course}  from "./module6" // .js ext is not required
-// console.log( "From Module 6", Course)
+//clo4
+//import { default as Person } from "./Person4"
 
-//Clo7:
-//import { default as Course}  from "./module7" // .js ext is not required
-//console.log( "From Module 7", Course)
+//let person = new Person( )
+//console.log( person.hello( ))
+//Unexpected token, expected "{" (2:12)
+ 
+//clo5
+//import { default as Person } from "./Person5"
 
-//Clo8:
-// import { default as Course, liveSession as Session}  from "./module8" // .js ext is not required
-// console.log( "From Module 8", Course)
-// console.log( "From Module 8", Session)
+//let person = new Person( )
+//console.log( person.hello( ))
+//Unexpected token, expected "{" (2:12)
+
+//Clo6
+// import { default as Student } from "./Student"
+// let student = new Student( )
+// console.log( student.hello( ))
+// Unexpected token, expected "{" (2:12) 
+
+//clo7: 
+//import { default as Student } from "./Student7"
+// let student = new Student("John Woods" )
+// console.log( student.hello( ))
+// Unexpected token, expected "{" (3:12)
+
+//clo8 
+// import { default as Student } from "./Student8"
+// let student = new Student("John Woods" )
+// console.log( student.hello( ))
+// Unexpected token, expected "{" (3:12)
 
 //clo9
-// import *  as mod from "./module9" // .js ext is not required
-// console.log( "From Module 9", mod.courseName)
-// console.log( "From Module 9", mod.liveSession)
-//Module not found: Can't resolve './module9' in
+// import { default as Student } from "./Student9"
+// let student = new Student("John Woods" )
+// console.log( student.hello( )) 
+// Unexpected token, expected "{" (2:12)
 
-//clo10:
-// import{ courseName as Course, liveSession as Session} "./module10" // .js ext is not required
+//clo10
+// import { default as Student } from "./Student10"
+// let student = new Student("John", "Smith" )
+// console.log( student.allCaps( ))
+// console.log( student.fullName( )) 
+// Unexpected token, expected "{" (2:12)
 
-// courseName ="FSW220"
-// console.log( "From Module 10", courseName)
-// console.log( "From Module 10", liveSession)
-//courseName ="FSW220"
- //| console.log( "From Module 10", courseName)
+//clo11
+// import { default as Student } from "./Student11"
 
- //clo11:
-//  
+// let student = new Student("John", "Smith" )
+// console.log( student.allCaps( ))
+// console.log( student.fullName( ))
+// Missing semicolon. (76:10) 
 
-//import *  as mod from "./module11" // .js ext is not required
+//clo12: 
+// import { default as Person } from "./Person12"
+// console.log( Person.fullName('Jammy', 'Harding' ))
+// Unexpected token, expected "{" (2:12)
 
-//  mod.courseName = "FSW220"
-//   mod.liveSession = "Spring2020"
-// console.log( "From Module 11", mod.courseName)
-
-//clo12:
-// let courseName ="FSW113"
-// let liveSession = "02/02/2020"
-
-// let combine = function( ){
-
-//   return ` CourseName = ${courseName}  in ${liveSession} `
-
-// }
-// export {courseName ,  liveSession, combine}
-// Attempted import error: 'combine' is not exported from './module11' (imported as 'mod').
-
-// import *  as mod from "./module11" // .js ext is not required
-
+//clo13
+// console.log( Person.firstName, Person.lastName)
+// Unexpected token, expected "{"
  
-
-
-
-// console.log( "From Module 12", mod.courseName)
-// console.log( "From Module 12", mod.liveSession)
-
-// console.log( "From Module 12", mod.combine( ))
+//clo14:
+Unexpected token, expected "{"
+Missing semicolon. (88:10)
