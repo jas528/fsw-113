@@ -85,5 +85,5 @@
 // Unexpected token, expected "{"
  
 //clo14:
-Unexpected token, expected "{"
-Missing semicolon. (88:10)
+//Unexpected token, expected "{"
+//Missing semicolon. (88:10)
